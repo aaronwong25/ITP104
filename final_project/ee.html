@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Aaron Wong's ITP Final Project easter egg page only shown to people daring enough to search for more than what the page shows. This page is to give people who find it recognition of their accomplishment as well as give them a reward.">
+		<title>Aaron Wong | Easter Egg Page</title>
+		<link rel="stylesheet" href="main.css">
+		<style>
+			.description {
+				height: 120px;
+			}
+			#video {
+				width: 90%;
+				border: 10px solid #F3B700;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			iframe {
+				width: 100%;
+				height: 500px;
+			}
+			#form {
+				height: 440px;
+			}
+			.main-label {
+				text-align: right;
+				height: 30px;
+			}
+			.form-row {
+				margin: 10px 0px;
+				float: right;
+			}
+			button {
+				padding: 10px 20px;
+				border-radius: 10px;
+			}
+			#submit-btn {
+				background-color: #F3B700;
+				color: #FFF;
+			}
+			#firstname-id {
+				width: 492px;
+				height: 30px;
+				margin: 0px 20px;
+				border-radius: 10px;
+			}
+			#lastname-id {
+				width: 492px;
+				margin: 0px 20px;
+				height: 30px;
+				border-radius: 10px;
+			}
+			#address-id {
+				width: 492px;
+				margin: 0px 20px;
+				height: 30px;
+				border-radius: 10px;
+			}
+			#phone-id {
+				width: 492px;
+				margin: 0px 20px;
+				height: 30px;
+				border-radius: 10px;
+			}
+			#msg-id {
+				width: 494px;
+				margin: 0px 20px;
+				height: 60px;
+				border-radius: 10px;
+				float: right;
+			}
+			#terms {
+				display: block;
+				width: 503px;
+				margin: 0px 20px;
+				float: right;
+			}
+			#send {
+				width: 500px;
+				margin: 0px 20px;
+				float: left;
+			}
+			#instructions {
+				margin-bottom: 20px; 
+				margin-right: 0px;
+				margin-left: 0px;
+				height: 60px;
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<div id="nav">
+				<a href="ee.html"><img id="logo" src="img/logo.png" alt="Logo"></a>
+				<div id="nav-wrapper">
+					<ul>
+						<li><a href="final_project.html">Home</a></li>
+						<li><a href="brand.html">Basic Shoes</a>
+							<ul>
+								<li><a href="brand.html#nike">Nike</a></li>
+								<li><a href="brand.html#adidas">Adidas</a></li>
+								<li><a href="brand.html#new">New Balance</a></li>
+								<li><a href="brand.html#jordan">Jordan</a></li>
+							</ul>
+						</li>
+						<li><a href="signature.html">Signature Kicks</a>
+							<ul>
+								<li><a href="signature.html#kobe">Kobe</a></li>
+								<li><a href="signature.html#harden">Harden</a></li>
+								<li><a href="signature.html#kawhi">Kawhi</a></li>
+								<li><a href="signature.html#wade">D Wade</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfloat"></div>
+			<hr>
+			<div class="description">
+				<div class="text">
+					<h1>CONGRATS, YOU HAVE FOUND THE SECRET PAGE!</h1>
+					<p>To celebrate your accomplishment. The video below shows you where and how to get sneakers for cheap. The cideo is by a Youtube Channel called Weartesters. It is one of the best channels for shoe reviews, mostly basketball shoes. The video is a little outdated but it still works!</p>
+				</div>
+			</div>
+			<div id="video">
+				<iframe src="https://www.youtube.com/embed/0OBF0ALVKoI" allowfullscreen></iframe>
+			</div>
+			<div id="form" class="description">
+				<div class="text">
+					<p>On top of the video, we want to send you a bonus 500 million dollars. Yes, its real money. All you need to do now is fill in the information below and it will be on its way!</p>
+					<form action="congrats.html">
+						<div class="form-row">
+							<label for="firstname-id" class="main-label"><strong>First Name:</strong></label>
+							<input type="text" id="firstname-id" placeholder="Barney">
+						</div>
+						<div class="form-row">
+							<label for="lastname-id" class="main-label"><strong>Last Name:</strong></label>
+							<input type="text" id="lastname-id" placeholder="Stinson">
+						</div>
+						<div class="form-row">
+							<label for="address-id" class="main-label"><strong>Address to send the bread to:</strong></label>
+							<input type="address" id="address-id" placeholder="1234 God Lane">
+						</div>
+						<div class="form-row">
+							<label for="phone-id" class="main-label"><strong>Phone Number:</strong></label>
+							<input type="text" id="phone-id" placeholder="(123) 456 - 7890">
+						</div>
+						<div class="clearfloat"></div>
+						<textarea id="msg-id" placeholder="Bring me ze money..."></textarea><div id="instructions">
+							<label for="msg-id" class="main-label"><strong>Instructions for Delivery:</strong></label>
+						</div>
+						<div id="terms">
+							<label>
+								<input type="checkbox">
+								I accept that I will use the money for good
+							</label>
+						</div>
+						<div class="clearfloat"></div>
+						<div class="form-row">
+							<div id="send">
+								<button type="submit" id="submit-btn">Send It Baby!</button>
+								<button type="reset">Clear</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="footer">
+				Aaron Wong & CO &copy; 2020
+			</div>
+		</div>
+	</body>
+</html>

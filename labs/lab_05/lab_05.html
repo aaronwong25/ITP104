@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Aaron Wong | Form Page</title>
+		<style>
+			h1 {
+				text-align: center;
+			}
+			#content {
+				background-image: url('paper.jpg');
+				width: 750px;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 10px;
+			}
+			#footer {
+				background-color: black;
+				color: #FFF;
+				text-align: center;
+				height: 50px;
+				width: 750px;
+				margin-left: auto;
+				margin-right: auto;				
+				line-height: 50px;
+				font-size: 0.8em;
+				padding: 10px;
+			}
+			.main-label {
+				text-align: right;
+				height: 30px;
+			}
+			.form-row {
+				margin: 20px 0px;
+				float: right;
+			}
+			button {
+				padding: 10px 20px;
+				border-radius: 10px;
+			}
+			#submit-btn {
+				background-color: #4250FF;
+				color: #FFF;
+			}
+			#firstname-id {
+				width: 492px;
+				height: 30px;
+				margin-left: 20px;
+				margin-right: 20px;
+				border-radius: 12px;
+			}
+			#lastname-id {
+				width: 492px;
+				margin-left: 20px;
+				margin-right: 20px;
+				height: 30px;
+				border-radius: 12px;
+			}
+			#email-id {
+				width: 492px;
+				margin-left: 20px;
+				margin-right: 20px;
+				height: 30px;
+				border-radius: 12px;
+			}
+			#phone-id {
+				width: 492px;
+				margin-left: 20px;
+				margin-right: 20px;
+				height: 30px;
+				border-radius: 12px;
+			}
+			#msg-id {
+				width: 494px;
+				margin-left: 20px;
+				margin-right: 20px;
+				height: 60px;
+				border-radius: 12px;
+				float: right;
+			}
+			#click {
+				display: block;
+				width: 504px;
+				margin: 20px;
+				height: 30px;
+				float: right;
+			}
+			#color-id {
+				width: 500px;
+				margin-left: 20px;
+				margin-right: 20px;
+				height: 30px;
+				border-radius: 12px;
+			}
+			#terms {
+				display: block;
+				width: 503px;
+				margin-left: 20px;
+				margin-right: 20px;
+				float: right;
+			}
+			#order {
+				width: 500px;
+				margin-left: 20px;
+				margin-right: 20px;
+				float: left;
+			}
+			#instructions {
+				margin-bottom: 20px; 
+				margin-right: 0px;
+				margin-left: 0px;
+				height: 60px;
+				text-align: right;
+			}
+			.clearfloat {
+			clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<h1>Backpack Customization Form</h1>
+			<hr>
+			<form action="congrats.html">
+					<div class="form-row">
+						<label for="firstname-id" class="main-label"><strong>First Name:</strong></label>
+						<input type="text" id="firstname-id" placeholder="John">
+					</div>
+					<div class="form-row">
+						<label for="lastname-id" class="main-label"><strong>Last Name:</strong></label>
+						<input type="text" id="lastname-id" placeholder="Doe">
+					</div>
+					<div class="form-row">
+						<label for="email-id" class="main-label"><strong>Email:</strong></label>
+						<input type="email" id="email-id" placeholder="johndoe@gmail.com">
+					</div>
+					<div class="form-row">
+						<label for="phone-id" class="main-label"><strong>Phone Number:</strong></label>
+						<input type="text" id="phone-id" placeholder="(123) 456 - 7890">
+					</div>
+
+					<div id="click">
+						<label>
+							<input type="radio" name="size">
+							Small
+						</label>
+						<label>
+							<input type="radio" name="size">
+							Medium
+						</label>
+						<label>
+							<input type="radio" name="size">
+							Large
+						</label>
+						<label>
+							<input type="radio" name="size">
+							Gigantic
+						</label>
+					</div>
+					<div class="form-row">
+						<label class="main-label"><strong>Size of Backpack:</strong></label>
+					</div>
+					<div class="clearfloat"></div>
+					
+					
+					<div id="click">
+						<label>
+							<input type="checkbox">
+							Name
+						</label>
+						<label>
+							<input type="checkbox">
+							Number
+						</label>
+						<label>
+							<input type="checkbox">
+							Country Flag
+						</label>
+						<label>
+							<input type="checkbox">
+							Surprise Me
+						</label>
+					</div>
+					<div class="form-row">
+						<label class="main-label"><strong>Embroid:</strong></label>
+					</div>
+					<div class="form-row">
+						<label for="color-id" class="main-label"><strong>Backpack Main Colour:</strong></label>
+						<select id="color-id">
+							<option disabled selected>--Choose one--</option>
+							<option>Red</option>
+							<option>Orange</option>
+							<option>Yellow</option>
+							<option>Green</option>
+							<option>Blue</option>
+							<option>Purple</option>
+							<option>Black</option>
+							<option>White</option>
+						</select>
+					</div>
+					<div class="clearfloat"></div>
+					<textarea id="msg-id" placeholder="Please..."></textarea><div id="instructions">
+						<label for="msg-id" class="main-label"><strong>Instructions for Delivery:</strong></label>
+					</div>
+					<div id="terms">
+						<label>
+							<input type="checkbox">
+							I accept the Terms & Conditions
+						</label>
+					</div>
+					<div class="clearfloat"></div>
+					<div class="form-row">
+						<div id="order">
+							<button type="submit" id="submit-btn">Order Now</button>
+							<button type="reset">Clear</button>
+					</div>
+				</div>
+			</form>
+			<div class="clearfloat"></div>
+		</div>
+		<div id="footer">
+		University of Southern California &copy; 2020
+		</div>
+	</body>
+</html>

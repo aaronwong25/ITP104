@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Aaron Wong | Fonts, Drop-down Menu, Overlay Captions</title>
+		<link rel="stylesheet" href="main.css">
+		<link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+		<style>
+			strong {
+				font-size: 1.2em;
+			}
+			#header {
+				background-image: url('img/background.jpg');
+				width: 1050px;
+				height: 475px;
+				background-size: cover;
+				background-position: center;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 0px;
+			}
+			h1 {
+				line-height: 475px;
+				color: #FFF;
+				font-size: 4em;
+				text-align: center;
+				text-shadow: 0px 0px 10px #000;
+				margin: 0px;
+			}
+			h2 {
+				font-family: 'Nova Mono', monospace;
+			}
+			#drivers {
+				text-align: center;
+			}
+			#main {
+				width: 646px;
+				padding: 15px;
+				float: left;
+				border-right: 1px solid black;
+				background-color: white;
+			}
+			#sidebar {
+				width: 339px;
+				padding: 15px;
+				float: left;
+				background-color: #D7D7D7;
+			}
+			#logo {
+				height: 150px;
+				width: 425px;
+				float: right;
+			}
+			#teams {
+				height: 300px;
+				width: auto;
+				float: left;
+				margin-right: 10px;
+			}
+			#tyres {
+				height: 300px;
+				width: auto;
+				float: right;
+				margin-left: 10px;
+				margin-bottom: 5px;
+			}
+			#netflix {
+				height: 300px;
+				width: auto;
+				float: left;
+				margin-right: 10px;
+				margin-top: 5px;
+			}
+			.caption {
+				text-align: center;
+			}
+			.driverimg {
+				width: 300px;
+				display: block;
+				height: auto;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.driverimg + p {
+				text-align: center;
+				visibility: hidden;
+			}
+			.driverimg:hover + p {
+				visibility: visible;
+			}
+			.img-container {
+				opacity: 0.7;
+			}
+			.img-container:hover {
+				opacity: 1.0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<h1>Formula One Racing</h1>
+		</div>
+		<div id="navbar">
+			<div id="nav-wrapper">
+				<ul>
+					<li>
+						<a id="active-nav" href="assignment_06.html">Home</a><ul>
+							<li><a href="assignment_06.html#uno">Introduction</a></li>
+							<li><a href="assignment_06.html#dos">Teams & Engine Suppliers</a></li>
+							<li><a href="assignment_06.html#tres">Tyres</a></li>
+							<li><a href="assignment_06.html#cuatro">Formula 1: Drive to Survive</a></li>
+						</ul>
+					</li>
+					<li><a href="gallery.html">Gallery</a></li>
+				</ul>
+				<div class="clearfloat"></div>
+			</div>
+		</div>
+		<div id="content">
+			<div id="main">
+				<h2 id="uno"><u>Formula One</u></h2>
+				<img id="logo" src="img/logo.png" alt="F1 Logo">
+				<p>Formula One (also known as Formula 1 or F1) is the highest class of international single-seater auto racing sanctioned by the Fédération Internationale de l'Automobile (FIA) and owned by Liberty Media, an American mass media company, through its wholly owned subsidiary, the Formula One Group.</p> 
+				<p>The World Drivers' Championship, which became the FIA Formula One World Championship in 1981, has been one of the premier forms of racing around the world since its inaugural season in 1950.</p>
+
+				<img id="teams" src="img/teams.jpg" alt="F1 Teams">
+				<h2 id="dos"><u>Teams and Engine Suppliers</u></h2>
+				<p>There are 10 teams in Formula One, each with 2 drivers which makes up the 20 cars on the grid (name of the lineup in F1). Most of you may know the big teams like Scuderia Ferrari, Mercedes and McLaren. All of these team build a car for their 2 drivers to compete in the 21 Grand Prix races in a year. Due to COVID-19, many races have been cancelled especially in the Americas.</p>
+				<p>As not all of these teams have enough money to invest into developing an engine, the big teams sell their engines to others. Currently, Mercedes supplies their engines to Williams Racing and Racing Point F1 Team; Ferrari supplies their engines to Haas F1 Team and Alfa Romeo Racing; and Renault supplies their engine to McLaren Racing. Renault used to supply their engines to Red Bull Racing and Scuderia Alpha Tauri but the teams left Renault to pursue Honda as their engine supplier.</p>
+				
+				<img id="tyres" src="img/tyres.jpg" alt="F1 Tyres">
+				<h2 id="tres"><u>Tyres</u></h2>
+				<p>In Formula 1, there are 5 kinds of tyres that are allowed to be used in a race. There are 3 dry tyres: Red is set to the softest compound aka "softs", yellow to "mediums", white to "hards". Intermediates (green) are used there is no rain and the track is wet with no standing water or drying. Wets (blue) are used when there is heavy raining. These tyres can evacuate 85 litres of water per second per tyre at 300kph. As a comparison, that is a bathtub of water per second per car.</p>
+				<p>All tyres in F1 are sponsored by Pirelli. Pirelli has 5 different compounds of rubber (C1-C5, C1 being the softest and C5 being the hardest). Each race Pirelli can choose 3 rubbers and those are set as the tyres for the race for everyone. Those 3 will be coloured by their compound from red (softest) to white (hardest) Each team is allowed to bring 13 sets of tyres for each of their cars. They can choose however many of each they want.</p>
+				
+				<img id="netflix" src="img/netflix.jfif" alt="F1 Drive to Survive">
+				<h2 id="cuatro"><u>Formula 1: Drive to Survive</u></h2>
+				<p>Formula 1: Drive to Survive is a documentary series produced in collaboration between Netflix and Formula One to give an exclusive behind-the-scenes look at the drivers and races of the 2018 and 2019 Formula One World Championships. It premiered on the 8th of March 2019. It is a very exciting tv show and I recommend it to anyone interested!</p>
+				<p>This was the main reason I got into Formula One Racing. Also, my brother slowly all got into it together. Mercedes has been dominating the races for the past 6 years by winning the constructors championship every year. Many fans are waiting for the day they fall. After recent rule changes, it looks like races will be more competitive soon. :)</p>
+			</div>
+			<div id="sidebar">
+				<h2 id="drivers"><u>Some F1 2020 Drivers</u></h2>\
+				<div class="img-container">
+					<img class="driverimg" src="img/hamilton.jpg" alt="Lewis Hamilton">
+					<p class="caption"><strong>Lewis Hamilton</strong>
+						<br>Mercedes-AMG Petronas F1 Team
+						<br>6-Time Formula One World Champion</p>
+				</div>
+				<div class="img-container">
+					<img class="driverimg" src="img/vettel.jpg" alt="Sebastian Vettel">
+					<p class="caption"><strong>Sebastian Vettel</strong>
+						<br>Scuderia Ferrari
+						<br>4-Time Formula One World Champion</p>
+				</div>
+				<div class="img-container">
+					<img class="driverimg" src="img/verstappen.jpg" alt="Max Verstappen">
+					<p class="caption"><strong>Max Verstappen</strong>
+						<br>Aston Martin Red Bull Racing - Honda
+						<br>Youngest Winner of a Formula One Grand Prix Race</p>
+				</div>
+				<div class="img-container">
+					<img class="driverimg" src="img/lando.jpg" alt="Lando Norris">
+					<p class="caption"><strong>Lando Norris</strong>
+						<br>McLaren Racing - Renault
+						<br>Fall Guys Champion</p>
+				</div>
+			</div>
+			<div class="clearfloat"></div>
+		</div>
+		<div id="footer">
+		University of Southern California &copy; 2020
+		</div>
+	</body>
+</html>

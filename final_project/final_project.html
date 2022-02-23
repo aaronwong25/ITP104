@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Aaron Wong's ITP Final Project that explores the world of shoes. Focusing on the most famous brands in the world, it explains basic shoes that many people possess as well as signature basketball shoes of professionals.">
+		<title>Aaron Wong | Final Project Homepage</title>
+		<link rel="stylesheet" href="main.css">
+		<style>
+			.image {
+				border: 10px solid #E3655B;
+			}
+			.image img {
+				bottom: 90px;
+			}
+			.description {
+				height: 150px;
+				background-color: #F3B700;
+			}
+			.page {
+				width: 100%;
+				height: 310px;
+			}
+			.page h2 {
+				background-color: #F3B700;
+				width: 100px;
+				height: 40px;
+				line-height: 40px;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				border-radius: 10px;
+				color: white;
+			}
+			.page-img {
+				width: 180px;
+				height: 180px;
+				border: 10px solid #E3655B;
+				margin: 20px 0px 20px 40px;
+				display: block;
+				background-color: white;
+				border-radius: 50px;
+				float: left;
+				overflow: hidden;
+				position: relative;
+			}
+			#nike-img img {
+				width: 100%;
+				height: auto;
+				position: relative;
+				top: 38px;
+			}
+			#adidas-img img {
+				width: 100%;
+				height: auto;
+				position: relative;
+				top: 21px;
+			}
+			#newbalance-img img {
+				width: 100%;
+				height: auto;
+				position: relative;
+				top: 41px;
+			}
+			#jordan-img img {
+				width: 100%;
+				height: auto;
+				position: relative;
+				bottom: 4px;
+				left: 3px;
+			}
+			#page2 h2 {
+				width: 380px;
+			}
+			#kobe-img img {
+				width: 100%;
+				height: auto;
+				position: relative;
+				top: 19px;
+			}
+			#harden-img img {
+				height: 100%;
+				width: auto;
+				position: relative;
+				right: 44px;
+			}
+			#kawhi-img img {
+				width: 100%;
+				height: auto;
+				position: relative;
+			}
+			#wade-img img {
+				width: 100%;
+				height: auto;
+				position: relative;
+				top: 15px;
+			}
+			.overlay {
+				position:absolute;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				padding-top: 80px;
+				background-color: #000;
+				text-shadow: 0px 0px 10px #000;
+				background-color: rgba(0, 0, 0, 0.4);
+				color: #FFF;	
+				text-align: center;
+				display: none;
+			}
+			.page-img:hover > .overlay {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<div id="nav">
+				<a href="ee.html"><img id="logo" src="img/logo.png" alt="Logo"></a>
+				<div id="nav-wrapper">
+					<ul>
+						<li><a id="active-nav" href="final_project.html">Home</a></li>
+						<li><a href="brand.html">Basic Shoes</a>
+							<ul>
+								<li><a href="brand.html#nike">Nike</a></li>
+								<li><a href="brand.html#adidas">Adidas</a></li>
+								<li><a href="brand.html#new">New Balance</a></li>
+								<li><a href="brand.html#jordan">Jordan</a></li>
+							</ul>
+						</li>
+						<li><a href="signature.html">Signature Kicks</a>
+							<ul>
+								<li><a href="signature.html#kobe">Kobe</a></li>
+								<li><a href="signature.html#harden">Harden</a></li>
+								<li><a href="signature.html#kawhi">Kawhi</a></li>
+								<li><a href="signature.html#wade">D Wade</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfloat"></div>
+			<hr>
+			<div class="image">
+				<img src="img/shoe.jpg" alt="Shoe">
+			</div>
+			<div class="description">
+				<div class="text">
+					<h1>Shoes</h1>
+					<p> An essential component of everyday life, to protect, to comfort your feet; but also, to show your style. A luxury that bridges the wealthy and the less fortunate. Many instances you can see people in lower classes wear shoes that celebrities wear. Ranging from prices in the double digits to millions of dollars, shoes is one of the things that everybody needs and sometimes wants. A huge market potential for profit when reselling rare shoes, this aspect of the human lifestyle is absoluteluy remarkable. </p>
+				</div>
+			</div>
+			<div class="clearfloat"></div>
+			<hr>
+			<div class="page">
+				<h2>Brands</h2>
+				<a href="brand.html#nike"><div id="nike-img" class="page-img">
+					<img src="img/nike.png" alt="Nike">
+					<div class="overlay">Nike</div>
+				</div></a>
+				<a href="brand.html#adidas"><div id="adidas-img" class="page-img" >
+					<img src="img/adidas.png" alt="Adidas">
+					<div class="overlay">Adidas</div>
+				</div></a>
+				<a href="brand.html#new"><div id="newbalance-img" class="page-img">
+					<img src="img/newbalance.png" alt="New Balance">
+					<div class="overlay">New Balance</div>
+				</div></a>
+				<a href="brand.html#jordan"><div id="jordan-img" class="page-img">
+					<img src="img/jordan.png" alt="Jordan">
+					<div class="overlay">Jordan</div>
+				</div></a>
+			</div>
+			<hr>
+			<div id="page2" class="page">
+				<h2>Signature Athletes with their Kicks</h2>
+				<a href="signature.html#kobe"><div id="kobe-img" class="page-img">
+					<img src="img/kobe.png" alt="Kobe">
+					<div class="overlay">Kobe Bryant</div>
+				</div></a>
+				<a href="signature.html#harden"><div id="harden-img" class="page-img" >
+					<img src="img/harden.jpeg" alt="Harden">
+					<div class="overlay">James Harden</div>
+				</div></a>
+				<a href="signature.html#kawhi"><div id="kawhi-img" class="page-img">
+					<img src="img/kawhi.jpg" alt="Kawhi">
+					<div class="overlay">Kawhi Leonard</div>
+				</div></a>
+				<a href="signature.html#wade"><div id="wade-img" class="page-img">
+					<img src="img/wade.png" alt="Wade">
+					<div class="overlay">Dwyane Wade</div>
+				</div></a>
+			</div>
+			<div class="clearfloat"></div>
+			<div id="footer">
+				Aaron Wong & CO &copy; 2020
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<title>Aaron Wong | Image Puzzle</title>
+		<style>
+			h1 {
+				text-align: center;
+			}
+			.clearfloat {
+			clear: both;
+			}
+			#images {
+				width: 1050px;
+				margin-left: auto;
+				margin-right: auto;
+				padding-bottom: 100px;
+			}
+			.img-container {
+				width: 512px;
+				height: 256px;
+				float: left;
+			}
+			#topright {
+				position: relative;
+				bottom: 25px;
+				left: 50px;
+				box-shadow: 10px 10px 10px;
+			}
+			#midleft {
+				position: relative;
+				bottom: 75px;
+				right: 50px;
+				box-shadow: 10px 10px 10px;
+			}
+			#bottomleft {
+				position: relative;
+				top: 50px;
+				left: 25px;
+				box-shadow: 10px 10px 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>The Office Puzzle</h1>
+		<div id="images">
+			<div class="img-container">
+				<img src="img/row-1-col-1.jpg" alt="topleft">
+			</div>
+			<div class="img-container">
+				<img id="topright" src="img/row-1-col-2.jpg" alt="topright">
+			</div>
+			<div class="img-container">
+				<img id="midleft" src="img/row-2-col-1.jpg" alt="midleft">
+			</div>
+			<div class="img-container">
+				<img src="img/row-2-col-2.jpg" alt="midright">
+			</div>
+			<div class="img-container">
+				<img id="bottomleft" src="img/row-3-col-1.jpg" alt="bottomleft">
+			</div>
+			<div class="img-container">
+				<img src="img/row-3-col-2.jpg" alt="bottomright">
+			</div>
+			<div class="clearfloat"></div>
+		</div>
+	</body>
+</html>

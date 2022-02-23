@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aaron Wong | CSS Effects</title>
+		<style>
+			.clearfloat {
+				clear: both;
+			}
+			body {
+				background-color: lightblue;
+			}
+			#container {
+				width: 900px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			h1{
+				height: 50px;
+				line-height: 50px;
+				width: 80%;
+				text-align: center;
+				border: 5px solid #000;
+				margin-left: auto;
+				margin-right: auto;
+				background-color: yellow;
+			}
+			#img-container {
+				width: 400px;
+				height: 400px;
+				margin-top: 50px;
+				margin-left: auto;
+				margin-right: auto;
+				position: relative;
+			}
+			#pasta1, #pasta2, #pasta3 {
+				width: 400px;
+				height: 400px;
+				transition: all 2s;
+				position: absolute;
+				border: 10px solid #000;
+			}
+			#pasta1 {
+				transform: rotate(-4deg);
+			}
+			#pasta3 {
+				transform: rotate(4deg);
+			}
+			#img-container:hover #pasta1 {
+				transform: scale(1) rotate(-10deg) translateX(-100px);
+			}
+			#img-container:hover #pasta2{
+				transform: scale(1) rotate(10deg) translateX(50px);
+			}
+			#img-container:hover #pasta3{
+				transform: scale(1) rotate(30deg) translateX(200px);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<h1>Pasta Babies</h1>
+			<div id="img-container">
+				<img id="pasta1" src="img/pasta1.jpg" alt="Pasta1">
+				<img id="pasta2" src="img/pasta2.jpg" alt="Pasta2">
+				<img id="pasta3" src="img/pasta3.jpg" alt="Pasta3">
+			</div>
+		</div>
+	</body>
+</html>

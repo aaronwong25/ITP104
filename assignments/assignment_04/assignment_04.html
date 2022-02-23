@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Aaron Wong | Calendar</title>
+		<style>
+			body {
+				background-color: lightgrey;
+			}
+			h1 {
+				margin: 0px;
+			}
+			#header {
+				background-image: url('img/header.jpg');
+				background-size: cover;
+				background-position: bottom;
+				color: #FFF;
+				font-size: 1.5em;
+				text-align: center;
+				text-shadow: 0px 0px 10px #000;
+				height: 480px;
+				width: 1058px;
+				margin-left: auto;
+				margin-right:auto;
+				line-height: 500px;
+			}
+			th {
+				border: 1px solid #000;
+				padding: 0px;
+				width: 150px;
+				height: 30px;
+				background-color: white;
+			}
+			td {
+				border: 1px solid #000;
+				padding: 10px 10px;
+				height: 130px;
+				background-color: white;
+				vertical-align: top;
+			}
+			#not {
+				color: grey;
+			}
+			table {
+				border-collapse: collapse;
+				text-align: center;
+				width: 1058px; 	
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.date {
+				vertical-align: text-top;
+				text-align: right;
+			}
+			#christmas {
+				background-image: url('img/christmas.jpg');
+				background-size: cover;
+				padding: 10px 10px;
+			}
+			#christmaseve{
+				background-color: yellow;
+	      color: black;
+	      height: 20px;
+	      width: 107px;
+	      text-align: center;
+	      margin: auto;
+	      margin-top: 55px;
+	      border-radius: 7px;
+			}	
+			#old{
+				background-color: yellow;
+	      color: black;
+	      height: 20px;
+	      width: 95px;
+	      text-align: center;
+	      margin: auto;
+	      margin-top: 55px;
+	      border-radius: 7px;
+			}	
+			#neweve{
+				background-color: yellow;
+	      color: black;
+	      height: 20px;
+	      width: 113px;
+	      text-align: center;
+	      margin: auto;
+	      margin-top: 55px;
+	      border-radius: 7px;
+			}	
+			.numbers {
+	      width: 20px;
+	      height: 20px;
+	      background-color: yellow;
+	      padding: 0px;
+	      margin: 0px;
+	      color: black;
+	      float: right;
+	      border-radius: 7px;
+    	}
+			#birthday {
+				background-image: url('img/birthday.jpg');
+				background-size: cover;
+				padding: 10px 10px;
+			}
+			#new {
+				background-image: url('img/new.jpg');
+				background-size: cover;
+				padding: 10px 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<h1>December 2020</h1>
+		</div>
+		<table>
+			<tr>
+				<th>Sun</th>
+				<th>Mon</th>
+				<th>Tue</th>
+				<th>Wed</th>
+				<th>Thu</th>
+				<th>Fri</th>
+				<th>Sat</th>
+			</tr>
+
+			<tr>
+				<td id="not" class="date">29</td>
+				<td id="not" class="date">30</td>
+				<td class="date">1</td>
+				<td class="date">2</td>
+				<td class="date">3</td>
+				<td class="date">4</td>
+				<td class="date">5</td>
+			</tr>
+
+			<tr>
+				<td class="date">6</td>
+				<td class="date">7</td>
+				<td class="date">8</td>
+				<td class="date">9</td>
+				<td class="date">10</td>
+				<td class="date">11</td>
+				<td class="date">12</td>
+			</tr>
+
+			<tr>
+				<td class="date">13</td>
+				<td class="date">14</td>
+				<td class="date">15</td>
+				<td class="date">16</td>
+				<td class="date">17</td>
+				<td class="date">18</td>
+				<td class="date">19</td>
+			</tr>
+			<tr>
+				<td class="date">20</td>
+				<td class="date">21</td>
+				<td class="date">22</td>
+				<td class="date">23</td>
+				<td id="christmas">
+					<div class="numbers"><strong>24</strong></div>
+					<div id="christmaseve"><strong>Christmas Eve</strong></div>
+				</td>
+				<td id="birthday">
+					<div class="numbers"><strong>25</strong></div>
+					<div id="old"><strong>My Birthday</strong></div>
+				</td>
+				<td class="date">26</td>
+			</tr>
+			<tr>
+				<td class="date">27</td>
+				<td class="date">28</td>
+				<td class="date">29</td>
+				<td class="date">30</td>
+				<td id="new">
+					<div class="numbers"><strong>31</strong></div>
+					<div id="neweve"><strong>New Year's Eve</strong></div>
+				</td>
+				<td id="not" class="date">1</td>
+				<td id="not" class="date">2</td>
+			</tr>
+		</table>
+	</body>
+</html>

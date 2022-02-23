@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Aaron Wong | Interest Page Gallery Layout</title>
+		<link rel="stylesheet" href="main.css">
+		<link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+		<style>	
+			#header {
+				background-image: url('img/gallery.webp');
+				width: 1050px;
+				height: 300px;
+				background-size: cover;
+				background-position: center;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 0px;
+			}
+			h1 {
+				line-height: 300px;
+				color: #FFF;
+				font-size: 4em;
+				text-align: center;
+				text-shadow: 0px 0px 10px #000;
+				margin: 0px;
+			}
+			#content {
+				width: 966px;
+				padding: 40px;
+				background-color: white;
+			}
+			#img1 {
+				width: 566px;
+				height: 400px;
+				margin: 0px;
+				display: block;
+				background-color: grey;
+				float: left;
+				overflow: hidden;
+				position: relative;
+			}
+			#img2 {
+				width: 360px;
+				height: 180px;
+				margin: 0px 0px 40px 40px;
+				display: block;
+				background-color: grey;
+				float: left;
+				overflow: hidden;
+				position: relative;
+			}
+			#img3 {
+				width: 360px;
+				height: 180px;
+				margin: 0px 0px 0px 40px;
+				display: block;
+				background-color: grey;
+				float: left;
+				overflow: hidden;
+				position: relative;
+			}
+			#img4 {
+				width: 240px;
+				height: 240px;
+				margin: 40px 0px 0px 0px;
+				display: block;
+				background-color: grey;
+				float: left;
+				overflow: hidden;
+				position: relative;
+			}
+			#img5 {
+				width: 240px;
+				height: 240px;
+				margin: 40px 0px 0px 40px;
+				display: block;
+				background-color: grey;
+				float: left;
+				overflow: hidden;
+				position: relative;
+			}
+			#img6 {
+				width: 406px;
+				height: 520px;
+				margin: 40px 0px 0px 40px;
+				display: block;
+				background-color: grey;
+				float: right;
+				overflow: hidden;
+				position: relative;
+			}
+			#img7 {
+				width: 240px;
+				height: 240px;
+				margin: 40px 0px 0px 0px;
+				display: block;
+				background-color: grey;
+				float: left;
+				overflow: hidden;
+				position: relative;
+			}
+			#img8 {
+				width: 240px;
+				height: 240px;
+				margin: 40px 0px 0px 40px;
+				display: block;
+				background-color: grey;
+				float: left;
+				overflow: hidden;
+				position: relative;
+			}
+			#img9 {
+				width: 463px;
+				height: 350px;
+				margin: 40px 0px 0px 0px;
+				display: block;
+				background-color: grey;
+				float: left;
+				overflow: hidden;
+				position: relative;
+			}
+			#img10 {
+				width: 463px;
+				height: 350px;
+				margin: 40px 0px 0px 40px;
+				display: block;
+				background-color: grey;
+				float: left;
+				overflow: hidden;
+				position: relative;
+			}
+			.overlay {
+				position:absolute;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				background-color: #000;
+				background-color: rgba(0, 0, 0, 0.4);
+				color: #FFF;	
+				font-family: 'Nova Mono', monospace;
+				text-align: center;
+				display: none;
+			}
+			#img1 .overlay {
+				padding-top: 190px;
+			}
+			#img1 img, #img4 img, #img7 img {
+				position: relative;
+				right: 40px;
+			}
+			#img2 .overlay, #img3 .overlay {
+				padding-top: 80px;
+			}
+			#img2 img{ 
+				width: 100%;
+				height: auto;
+				position: relative;
+				bottom: 20px;
+			}
+			#img3 img {
+				width: 100%;
+				height: auto;
+				position: relative;
+				bottom: 5px;
+			}
+			#img4 .overlay, #img8 .overlay {
+				padding-top: 110px;
+			}
+			#img5 .overlay, #img7 .overlay {
+				padding-top: 100px;
+			}
+			#img5 img, #img8 img {
+				position: relative;
+				right: 60px;
+			}
+			#img6 .overlay {
+				padding-top: 250px;
+			}
+			#img9 .overlay, #img10 .overlay {
+				padding-top: 165px;
+			}
+			#img9 img {
+				position: relative;
+				right: 10px;
+			}
+			.img-container:hover > .overlay {
+				display: block;
+			}
+			.img-container > img {
+				height: 100%;
+				width: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<h1>Gallery</h1>
+		</div>
+		<div id="navbar">
+			<div id="nav-wrapper">
+				<ul>
+					<li>
+						<a href="assignment_06.html">Home</a>
+						<ul>
+							<li><a href="assignment_06.html#uno">Introduction</a></li>
+							<li><a href="assignment_06.html#dos">Teams & Engine Suppliers</a></li>
+							<li><a href="assignment_06.html#tres">Tyres</a></li>
+							<li><a href="assignment_06.html#cuatro">Formula 1: Drive to Survive</a></li>
+						</ul>
+					</li>	
+					<li><a id="active-nav" href="gallery.html">Gallery</a></li>
+				</ul>
+				<div class="clearfloat"></div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="img-container" id="img1">
+				<img src="img/img_1.jpg" alt="Gasly">
+				<div class="overlay">Lando Gets Podium</div>
+			</div>
+			<div class="img-container" id="img2">
+				<img src="img/img_2.jpg" alt="Mercedes">
+				<div class="overlay">Mercedes Changes Colour</div>
+			</div>
+			<div class="img-container" id="img3">
+				<img src="img/img_3.jpg" alt="Mugello">
+				<div class="overlay">Big Mugello Crash</div>
+			</div>
+			<div class="img-container" id="img4">
+				<img src="img/img_4.jpg" alt="Hulk">
+				<div class="overlay">Hulkenburg Returns</div>
+			</div>
+			<div class="img-container" id="img5">
+				<img src="img/img_5.jpg" alt="Stroll">
+				<div class="overlay">Stroll In F1 Because of Dad's Money</div>
+			</div>
+			<div class="img-container" id="img6">
+				<img src="img/img_6.jpg" alt="Albon">
+				<div class="overlay">Albon Gets First Podium</div>
+			</div>
+			<div class="img-container" id="img7">
+				<img src="img/img_7.jpg" alt="Anniversary">
+				<div class="overlay">70th Anniversary Grand Prix</div>
+			</div>
+			<div class="img-container" id="img8">
+				<img src="img/img_8.jpg" alt="Verstappen">
+				<div class="overlay">Verstappen Wins</div>
+			</div>
+			<div class="img-container" id="img9">
+				<img src="img/img_9.jpg" alt="Lando">
+				<div class="overlay">Gasly Gets First Win</div>
+			</div>
+			<div class="img-container" id="img10">
+				<img src="img/img_10.png" alt="Fallguys">
+				<div class="overlay">Lando Wins Fall Guys</div>
+			</div>
+			<div class="clearfloat"></div>
+		</div>
+		<div id="footer">
+			University of Southern California &copy; 2020
+		</div>
+	</body>
+</html>
